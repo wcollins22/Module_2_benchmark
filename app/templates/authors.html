@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+
+{% for name, author in book_list.items %}
+{% if name == book %}
+<h1>{{author.title}} by {{author.author}}</h1>
+<h1>Number of Pages: {{author.num_pages}}</h1>
+{% endif %}
+
+
+{% endfor %}
+
+{% endblock content %}
